@@ -2,8 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+
     color: #640D6B;
+    font-family: "DM Sans";
 }
 
 .btn, .btn-small, .btn-large {
@@ -25,7 +26,7 @@ nav{
 }
 
 .hero{
-    margin: 5vh 0 12px 0;
+    padding: 5vh 0 12px 0;
 }
 
 .career{
@@ -33,5 +34,90 @@ nav{
 }
 
 .carousel.carousel-slider .carousel-item {
-    min-height: none;
+    min-height: 0;
+    height:min-content;
+    padding-bottom: 4px;
+    min-width: 120px;
 }
+
+.author{
+    border-radius: 50%;
+    border-style:outset ;
+    border-color: #f76f21;
+    border-width: 12px
+    ;
+}
+
+.content{
+
+    padding-top:10vh;
+    padding-bottom: 10vh;
+}
+
+.section{
+    margin-top: 80px;
+}
+
+b1{
+    color:#ca4e06;
+    font-weight: 500;
+    font-family: "DM Sans";
+}
+
+.prevent-select {
+    user-select: none; /* Standard syntax */
+}
+
+.row a{
+    width: 100%;
+    min-width: 180px;
+}
+
+.highlightText{
+    color: #ffffff;
+}
+
+.card-carousel{
+    padding: 40px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 0.59);
+}
+
+.longParallax{
+    height: auto;
+}
+
+.heightConstrained{
+    height: auto;
+}
+
+#caption {
+    padding: 0px;
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    
+    -webkit-transition: width 0.25s linear;
+    -moz-transition: width 0.25s linear;
+    -ms-transition: width 0.25s linear;
+    -o-transition: width 0.25s linear;
+    transition: width 0.25s linear; 
+}
+
+#caption > span {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#caption > span:first-child {
+    display:inline-flex;
+}
+
+
