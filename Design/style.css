@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:regular,500,600,700,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    color: #640D6B;
+}
+
+.btn, .btn-small, .btn-large {
+    background-color: #f76f21;
+}
+
+.btn:hover, .btn-small:hover, .btn-large:hover {
+    background-color: #ca4e06;
+}
+
+nav{
+    background-color: rgb(71, 71, 77);
+}
+
+.logoText{
+    font-family: "DM Sans";
+    font-weight: 100;
+    font-style: italic;
+}
+
+.hero{
+    margin: 5vh 0 12px 0;
+}
+
+.career{
+    margin: 0;
+}
+
+.carousel.carousel-slider .carousel-item {
+    min-height: none;
+}
