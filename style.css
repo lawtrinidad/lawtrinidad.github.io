@@ -4,7 +4,10 @@
 h1, h2, h3, h4, h5, h6 {
 
     color: #640D6B;
-    font-family: "DM Sans";
+    font-family: "DM Sans";}
+
+.hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6, .hero b{
+    color: rgb(255, 255, 255);
 }
 
 .btn, .btn-small, .btn-large {
@@ -16,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav{
-    background-color: rgb(71, 71, 77);
+    background-color: #212121;
 }
 
 .logoText{
@@ -26,18 +29,59 @@ nav{
 }
 
 .hero{
-    padding: 5vh 0 12px 0;
+    padding: 10vh 0 10vh 0;
+    background-image:url(/images/heroDark.gif);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: right;
 }
 
-.career{
-    margin: 0;
+.highlight{
+    color: #90009b;
+    font-weight: 700;
+    -webkit-text-stroke-color:#ea07ff;
+    -webkit-text-stroke-width: 1px;
 }
 
-.carousel.carousel-slider .carousel-item {
-    min-height: 0;
-    height:min-content;
-    padding-bottom: 4px;
-    min-width: 120px;
+.highlightPF{
+    color: #91009b00;
+    font-weight: 800;
+    -webkit-text-stroke-color:#c307e9;
+    -webkit-text-stroke-width: 1px;
+}
+
+.highlightPF:hover{
+    color: #91009b00;
+    font-weight: 800;
+    -webkit-text-stroke-color:#e9ad07;
+    -webkit-text-stroke-width: 2px;
+    box-shadow:#ffd700;
+}
+
+.highlightBody{
+    color: #f76f21; 
+}
+
+.customButton{
+    margin: 40px 0 40px 0;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0.75rem 1.25rem;
+    border-radius: 24px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.customButton:hover{ /* Change text color to gold */
+    color: #ffd700; 
+    border-color: #ffd700; /* Change border color to gold */
+    box-shadow: 0 0 10px #ffd700; /* Add a glow effect */
+
+}
+
+.customButton:focus {
+    outline: initial;
+    background-color: initial;
 }
 
 .author{
@@ -48,14 +92,14 @@ nav{
     ;
 }
 
-.content{
+.section{
 
-    padding-top:10vh;
-    padding-bottom: 10vh;
+    padding-top:8vh;
+    padding-bottom: 8vh;
 }
 
-.section{
-    margin-top: 80px;
+p{
+    font-family: "DM Sans";
 }
 
 b1{
@@ -68,8 +112,12 @@ b1{
     user-select: none; /* Standard syntax */
 }
 
+.row{
+    margin-bottom: inherit;
+}
+
 .row a{
-    width: 100%;
+    width: 10%;
     min-width: 180px;
 }
 
@@ -77,7 +125,9 @@ b1{
     color: #ffffff;
 }
 
+
 .card-carousel{
+    margin-top:48vh;
     padding: 40px;
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.1);
@@ -98,15 +148,12 @@ b1{
 
 #caption {
     padding: 0px;
-    display: inline-block;
-    position: relative;
-    vertical-align: bottom;
-    
-    -webkit-transition: width 0.25s linear;
-    -moz-transition: width 0.25s linear;
-    -ms-transition: width 0.25s linear;
-    -o-transition: width 0.25s linear;
-    transition: width 0.25s linear; 
+    position:relative;
+    white-space: nowrap;
+}
+
+#caption h3{
+    margin: 0;
 }
 
 #caption > span {
@@ -120,4 +167,9 @@ b1{
     display:inline-flex;
 }
 
+@media (max-width: 768px) {
+    .hero{
+        padding: 4vh 0 4vh 0;
+    }
+}
 
