@@ -22,7 +22,7 @@
                     <li class="active"><a href="index.html">Home</a></li>
                     <li ><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a id="about">About</a></li>
+                    <li><a id="about" >About</a></li>
                 </ul>
             </div>
         </div>
@@ -33,7 +33,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="#">Services</a></li>
-        <li><a id="about">About</a></li>
+        <li><a id="aboutSide">About</a></li>
     </ul>
 
     <div class="container">
@@ -294,16 +294,21 @@
 
 <script>
     document.getElementById('about').addEventListener('click', function() {
-        window.location.href = 'index.html';
-
-        window.onload = function() {
-            document.getElementById('aboutSection').scrollIntoView({ 
-                behavior: 'smooth' 
-            });
-        };
+        document.getElementById('aboutSection').scrollIntoView({ 
+            behavior: 'smooth' 
+        });
     });
+
 </script>
 
+<script>
+    document.getElementById('aboutSide').addEventListener('click', function() {
+        document.getElementById('aboutSection').scrollIntoView({ 
+            behavior: 'smooth' 
+        });
+    });
+
+</script>
 
 </body>
 </html>
