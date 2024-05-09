@@ -105,7 +105,7 @@
                         </p>    
                     </div>  
                     <div class="col s12 m6 l6 offset-m2 offset-l2 prevent-select">
-                        <img class="responsive-img z-depth-3" src="images/card1.jpg" style="border-radius: 16px;"> 
+                        <img class="responsive-img z-depth-3 fade-in-element" src="images/card1.jpg" style="border-radius: 16px;"> 
                     </div>  
                 </div>
 
@@ -119,7 +119,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m6 l6 prevent-select">
-                        <img class="responsive-img z-depth-3" src="images/card2.jpg" style="border-radius: 16px;">
+                        <img class="responsive-img z-depth-3 fade-in-element" src="images/card2.jpg" style="border-radius: 16px;">
                     </div>  
                     <div class="col s12 m4 l4  offset-m2 offset-l2 prevent-select" style="overflow: hidden; ">
                         <h2><b>WEB DEV</b></h2>
@@ -144,7 +144,7 @@
                         </p>   
                     </div>  
                     <div class="col s12 m6 l6  offset-m2 offset-l2 prevent-select" style="overflow: hidden; ">
-                        <img class="responsive-img z-depth-3" src="images/card3.png" style="border-radius: 16px;">
+                        <img class="responsive-img z-depth-3 fade-in-element" src="images/card3.png" style="border-radius: 16px;">
                     </div>
                 </div>
 
@@ -308,6 +308,31 @@
         });
     });
 
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.fade-in-element');
+            elements.forEach(function(element) {
+                if (isElementInViewport(element)) {
+                    element.classList.add('fade-in');
+                }  else {
+                    element.classList.remove('fade-in');
+                }
+            });
+        });
+
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    });
 </script>
 
 </body>
